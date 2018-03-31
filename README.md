@@ -1,27 +1,36 @@
-Tidmarsh Data Processing
-Workflow
-Note: The [brackets] in the example script indicate portions that must be replaced with specific directory paths or names specific to unique map sources. For example, a path might look like ~/Desktop/Folder
+# Tidmarsh Data Processing
 
-1. Create and organize Dataset
-Data Requirements:
+This repository outlines the standard workflow process for all Living Observatory datasets.
 
-2. Import data table(s) of interest into PostgreSQL
-3. Process dataset and check for errors
-Move the issue to the "In progress" column in Processing.
+## Workflow
 
-Homogenize data tables
 
-4. Zip completed data table(s) (in terminal)**
-Zip each data table pg_dump -x -O -t sources.[table_name] [schema]|gzip>[table_name].sql.gz
+### 1. Create issue for new dataset
+**Note: This step should be done as soon as you've made a plan to collect data**
 
-5. Create a new folder for the dataset, and include:
-zipped SQL dump(s) of updated attribute tables
-any metadata
-6. Secure copy this new folder to push to MIT computer:
-Before copying the folder, make sure permissions on it are correctly set:
+- Go to the [issues page](https://github.com/Tidmarsh-Restoration/Data-Processing/issues)
+- Click on "**New Issue**"
+- Fill out required fields for the dataset
+- Move the issue into the "**On Deck**" column in the [data workflow](https://github.com/Tidmarsh-Restoration/Data-Processing/projects/1) page
 
-chmod -R 777 [folder]
+### 2. Clean and reformat the data according your lab group's standards
+- Move issue into the "**Clean & Standardize**" column in the [data workflow](https://github.com/Tidmarsh-Restoration/Data-Processing/projects/1) page until this step is completed
+- Reference the page in this repository that documents your lab groups data standards
+- Once done, check the "QA/QC" and "Format / standardize data" boxes in the to do list for the issue
 
-Next, push the folder to MIT computer in terminal:
+### 3. Perform a final check on dataset
+**Note: this final review may have to be done by a specific person within the lab group or by the database manager. If you are not personally performing the final check, please assign the dataset issue to the person responsible for the final review.**
 
-Data of Interest (in order of priority):
+- Move issue into the "**Final Check**" column in the [data workflow](https://github.com/Tidmarsh-Restoration/Data-Processing/projects/1) page until this step is completed
+- Confirm that the dataset has all required fields for the dataset type
+- Confirm that there are no errors in the dataset
+- Confirm that the dataset has the appropriate structure and file format (e.g. csv, JSON)
+
+### 4. Import the dataset into the Living Observatory database
+**Note: This may done on your own using the chain-API, or by the database manager if appropriate**
+Once this is done: 
+- Click on "**Close Issue**" on the issues page
+- Comment dataset's API link so it can easily be located and extracted by any team member
+- Check the last two boxes in the to do list for the dataset issue
+
+
