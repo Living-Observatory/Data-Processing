@@ -11,6 +11,7 @@ This repository outlines the standard workflow process for all Living Observator
 - Go to the [issues page](https://github.com/Tidmarsh-Restoration/Data-Processing/issues)
 - Click on "**New Issue**"
 - Fill out required fields for the dataset
+- Add relevant lables to the issue if appropriate
 - Move the issue into the "**On Deck**" column in the [data workflow](https://github.com/Tidmarsh-Restoration/Data-Processing/projects/1) page
 
 ### 2. Clean and reformat the data according your lab group's standards
@@ -32,5 +33,6 @@ Once this is done:
 - Click on "**Close Issue**" on the issues page
 - Comment dataset's API link so it can easily be located and extracted by any team member
 - Check the last two boxes in the to do list for the dataset issue
+- Move issue to the "**Done**" column in the [data workflow](https://github.com/Tidmarsh-Restoration/Data-Processing/projects/1) page
 
 
